@@ -22,7 +22,7 @@
 
         <div class="mb-3">
           <label class="form-label">Linguaggio</label>
-          <input type="text" class="form-control" name="type" value="{{ old('programming_language') }}" id="" >
+          <input type="text" class="form-control" name="programming_language" value="{{ old('programming_language') }}" id="" >
         </div>
 
         <div class="mb-3">
