@@ -19,6 +19,8 @@
 
                     {{ __('You are logged in!') }}
                 </div>
+
+                <a href="{{route("admin.projects.index")}}" class="btn btn-success btn-sm" type="button">Entra nel tuo boolfolio</a>
             </div>
         </div>
     </div>
