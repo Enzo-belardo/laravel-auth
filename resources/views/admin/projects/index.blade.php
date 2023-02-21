@@ -3,6 +3,9 @@
 
 @section('content')
 <div class="container">
+    <div class="mb-3 d-flex justify-content-center">
+        <a class="btn btn-success me-3" href="{{route('admin.projects.create')}}">crea un nuovo comics</a>
+    </div>
     <table class="table">
         <thead>
             <tr class="text-dark">
