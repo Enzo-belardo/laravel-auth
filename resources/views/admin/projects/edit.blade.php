@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <form action="{{route('admin.projects.update', $project->id )}}" method="POST">
+    <form class="p-5" action="{{route('admin.projects.update', $project->id )}}" method="POST">
         @method('PUT')
         @csrf
 

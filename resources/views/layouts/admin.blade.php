@@ -84,6 +84,9 @@
         <main class="bg-secondary">
             @yield('content')
         </main>
+
+        @yield('scripts')
+
     </div>
 </body>
 

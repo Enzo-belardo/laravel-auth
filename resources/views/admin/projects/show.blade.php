@@ -4,8 +4,8 @@
 @section('content')
 <div class="container ">
     <div class="row justify-content-center">
-        <div class="col-12">
-            <div class="card p-5 text-center bg-dark">
+        <div class="col-12 p-5">
+            <div class="card p-3 text-center bg-dark">
                 <div class="card-title text-light">
                     <h1>
                         {{ $project->title }}
