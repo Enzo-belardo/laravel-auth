@@ -1,8 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
-<div class="container">
-    <h2 class="fs-4 text-secondary my-4">
+<div class="container dashboard p-5">
+    <h2 class="fs-4 text-secondary">
         {{ __('Dashboard') }}
     </h2>
     <div class="row justify-content-center">
@@ -20,7 +20,7 @@
                     {{ __('You are logged in!') }}
                 </div>
 
-                <a href="{{route("admin.projects.index")}}" class="btn btn-success btn-sm" type="button">Entra nel tuo boolfolio</a>
+                <a href="{{route("admin.projects.index")}}" class="btn btn-success btn-sm" type="button">Entra nel pannello di controllo</a>
             </div>
         </div>
     </div>

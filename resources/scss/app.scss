@@ -1,1 +1,14 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+.confirm,
+.forgot,
+.login,
+.register,
+.reset,
+.dashboard,
+.login{
+    height: 90vh;
+}
+
+nav{
+    height: 10vh;
+}

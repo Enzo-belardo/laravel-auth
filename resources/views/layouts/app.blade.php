@@ -25,9 +25,9 @@
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
                     <div class="logo_laravel">
-                        <h1>
+                        <h3>
                             Boolfolio
-                        </h1>
+                        </h3>
                     </div>
                     {{-- config('app.name', 'Laravel') --}}
                 </a>

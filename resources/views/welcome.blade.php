@@ -6,7 +6,7 @@
     <div class="text-center mb-3 text-danger">
         <h1>I miei progetti</h1>
     </div>
-    <div class="d-flex justify-content-between flex-wrap ">
+    <div class="d-flex justify-content-between flex-wrap">
         @foreach($projects as $project)
         <div class="card mb-3" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
