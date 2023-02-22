@@ -5,6 +5,18 @@
     <form action="{{route('admin.projects.store')}}" method="POST">
         @csrf
 
+        @if ($errors->any())
+          <div class="alert alert-danger">
+            <ul>
+              @foreach($errors->all() as $error)
+                <li>
+                  {{ $error }}
+                </li>
+              @endforeach
+            </ul>
+          </div>
+        @endif
+
         <div class="mb-3">
           <label class="form-label">titolo</label>
           <input  type="text" class="form-control" name="title" value="{{ old('title') }}" id="" >
