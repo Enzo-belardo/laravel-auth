@@ -2,11 +2,11 @@
 
 
 @section('content')
-<div class="container">
-    <div class="mb-3 d-flex justify-content-center">
+<div class="container py-5">
+    <div class="mb-3 d-flex justify-content-end ">
         <a class="btn btn-success me-3" href="{{route('admin.projects.create')}}">Inserisci un nuovo progetto </a>
     </div>
-    <table class="table">
+    <table class="table w-75 m-auto">
         <thead>
             <tr class="text-dark">
                 <th scope="col">id</th>
