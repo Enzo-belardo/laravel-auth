@@ -1,9 +1,12 @@
 @extends('layouts.admin')
 
+@section('scripts')
+    @vite('resources/js/delete.js')
+@endsection
 
 @section('content')
 <div class="container py-5">
-    
+
     @if (session('message'))
         <div class="alert alert-{{ session('alert-type') }}">
             {{ session('message')  }}
@@ -47,8 +50,4 @@
         @endforeach 
     </table> 
 </div>
-@endsection
-
-@section('scripts')
-    @vite('resources/js/delete.js')
 @endsection

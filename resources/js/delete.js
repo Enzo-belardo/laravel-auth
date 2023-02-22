@@ -5,6 +5,8 @@ deleter.forEach((element) => {
         event.preventDefault();
         const dataElement = element.getAttribute('data-element');
         const confirmDelete = window.confirm(`sei sicuro di voler cancellare ${dataElement}`);
-        if (confirmDelete) this.submit();
+        if (confirmDelete){
+            this.submit();
+        } 
     } )
 });
