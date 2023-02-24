@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <form class="p-5" action="{{route('admin.projects.store')}}" method="POST">
+    <form class="p-5" action="{{route('admin.projects.store')}}" method="POST" enctype="multipart/form-data">
         @csrf
 
         @if ($errors->any())
