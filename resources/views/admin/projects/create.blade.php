@@ -22,14 +22,19 @@
           <input  type="text" class="form-control" name="title" value="{{ old('title') }}" id="" >
         </div>
 
-        <div class="mb-3">
+        <!-- <div class="mb-3">
           <label class="form-label">Thumb</label>
           <input type="text" class="form-control" name="thumb" value="{{ old('thumb') }}"  id="" >
-        </div>
+        </div> -->
 
         <div class="mb-3">
           <label class="form-label">Descrizione</label>
           <textarea type="text" id="" name="description" value="{{ old('description') }}" class="form-control" ></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Anno del progetto</label>
+          <input type="text" class="form-control" name="year_project" value="{{ old('date_project') }}" id="" >  
         </div>
 
         <div class="mb-3">
@@ -40,6 +45,11 @@
         <div class="mb-3">
           <label class="form-label">tipo</label>
           <input type="text" class="form-control" name="type" value="{{ old('type') }}" id="" >
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Inserisci un immagine</label>
+          <input type="file" class="form-control" name="image" value="{{ old('image') }}" id="" >
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
