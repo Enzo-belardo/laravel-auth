@@ -20,11 +20,12 @@
 
     <table class="table w-75 m-auto">
         <thead>
-            <tr class="text-dark">
+            <tr class="text-dark ">
                 <th scope="col">id</th>
                 <th scope="col">Titolo</th>
                 <th scope="col">Tecnologie</th>
                 <th scope="col">Tipo</th>
+                <th scope="col">Anno</th>
                 <th scope="col"><i class="fa-sharp fa-solid fa-ellipsis"></i></th>
             </tr>
         </thead>
@@ -36,6 +37,7 @@
                 <td>{{ $project->title }}</td>
                 <td>{{ $project->programming_language }}</td>
                 <td>{{ $project->type }}</td>
+                <td>{{$project->year_project}}</td>
                 <td>
                  <a class = "btn btn-sm btn-primary " href=" {{ route ( 'admin.projects.show' , $project->id ) }}" >Show</a>
                  <a class = "btn btn-sm btn-warning " href=" {{ route ( 'admin.projects.edit' , $project->id ) }}" >Edit</a>

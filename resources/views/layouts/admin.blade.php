@@ -14,6 +14,8 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    
 
     <!-- Usando Vite -->
     @vite(['resources/js/app.js'])
@@ -21,9 +23,9 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-warning shadow-sm">
-            <div class="container">
-                <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
+        <nav class="navbar navbar-expand-md navbar-light bg-app  shadow-sm">
+            <div class="container text-light">
+                <a class="navbar-brand d-flex align-items-center " href="{{ url('/') }}">
                     {{-- config('app.name', 'Laravel') --}}
                 </a>
                 <h3>
@@ -56,13 +58,13 @@
                         @endif
                         @else
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }}
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('admin.dashboard') }}">{{__('Dashboard')}}</a>
-                                <a class="dropdown-item" href="{{ route('profile.edit') }}">{{__('Profile')}}</a>
+                                <a class="dropdown-item " href="{{ route('profile.edit') }}">{{__('Profile')}}</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
