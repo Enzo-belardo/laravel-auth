@@ -19,7 +19,8 @@ return new class extends Migration
             $table->text('description');
             $table->string('programming_language');
             $table->string('type', 20);
-            $table->string('thumb');
+            $table->integer('year_project');
+            // $table->string('thumb');
             $table->timestamps();
         });
     }
